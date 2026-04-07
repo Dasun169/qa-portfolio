@@ -47,8 +47,8 @@ export default function Navbar() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                ? "glass border-b border-white/10 py-3"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || isOpen
+                ? "glass-solid border-b border-white/10 py-3 bg-[#f8fafc]/95 dark:bg-[#020617]/95 backdrop-blur-2xl shadow-xl"
                 : "py-5 bg-transparent"
                 }`}
         >
@@ -108,7 +108,7 @@ export default function Navbar() {
                     <ThemeToggle />
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="p-2 rounded-xl glass border border-white/10"
+                        className="p-2 rounded-xl border border-white/10 bg-slate-200/50 dark:bg-white/5"
                     >
                         {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                     </button>
@@ -122,7 +122,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="lg:hidden glass border-t border-white/10 px-4 pb-4"
+                        className="lg:hidden border-t border-white/10 px-4 pb-4 mt-3"
                     >
                         {NAV_ITEMS.map((item, i) => (
                             <motion.button
@@ -130,10 +130,16 @@ export default function Navbar() {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: i * 0.05 }}
-                                onClick={() => scrollTo(item.href)}
+                                onClick={() => {
+                                    setIsOpen(false);
+                                    // Slight delay ensures the collapse animation doesn't abort the scroll attempt on mobile browsers
+                                    setTimeout(() => {
+                                        document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                                    }, 200);
+                                }}
                                 className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium mt-1 transition-colors ${activeSection === item.href.slice(1)
                                     ? "text-brand-400 bg-brand-500/10"
-                                    : "text-slate-400 hover:text-slate-100 hover:bg-white/5"
+                                    : "text-slate-500 dark:text-slate-400"
                                     }`}
                             >
                                 {item.label}
@@ -149,6 +155,6 @@ export default function Navbar() {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </motion.nav >
+        </motion.nav>
     );
 }
