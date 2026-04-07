@@ -4,10 +4,10 @@ import { Mail, BookOpen } from "lucide-react";
 import { Github, Linkedin } from "@/components/ui/icons";
 
 const SOCIALS = [
-    { icon: Github, href: "https://github.com/dasunnavindu", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/dasunnavindu", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/Dasun169", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/dasun-navindu-987857292/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:dasunnavindu2001@gmail.com", label: "Email" },
-    { icon: BookOpen, href: "https://medium.com/@dasunnavindu", label: "Medium" },
+    { icon: BookOpen, href: "https://medium.com/@dasunnavindu2001", label: "Medium" },
 ];
 
 const LINKS = ["Home", "About", "Skills", "Projects", "Experience", "Certifications", "Contact"];

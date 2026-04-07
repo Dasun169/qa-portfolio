@@ -40,8 +40,8 @@ export default function Contact() {
     const CONTACT_INFO = [
         { icon: Mail, label: "Email", value: "dasunnavindu2001@gmail.com", href: "mailto:dasunnavindu2001@gmail.com" },
         { icon: Phone, label: "Phone", value: "+94 71 627 6932", href: "tel:+94716276932" },
-        { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/dasunnavindu", href: "https://linkedin.com/in/dasunnavindu" },
-        { icon: Github, label: "GitHub", value: "github.com/dasunnavindu", href: "https://github.com/dasunnavindu" },
+        { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/dasunnavindu", href: "https://www.linkedin.com/in/dasun-navindu-987857292/" },
+        { icon: Github, label: "GitHub", value: "github.com/dasunnavindu", href: "https://github.com/Dasun169" },
     ];
 
     return (
@@ -136,7 +136,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     placeholder="Your Message"
                                     required
-                                    rows={5}
+                                    rows={11}
                                     className="w-full px-4 py-3 glass rounded-xl border border-white/10 focus:border-brand-500/50 outline-none text-slate-100 placeholder-slate-600 text-sm transition-colors bg-transparent resize-none"
                                 />
                                 <motion.button
