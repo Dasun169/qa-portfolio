@@ -94,7 +94,7 @@ export default function Navbar() {
                     <motion.a
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
-                        href="/cv.pdf"
+                        href="/dasun_navindu_resume.pdf"
                         download
                         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 text-sm font-semibold rounded-xl hover:opacity-90 transition-opacity"
                     >
@@ -140,7 +140,7 @@ export default function Navbar() {
                             </motion.button>
                         ))}
                         <a
-                            href="/cv.pdf"
+                            href="/dasun_navindu_resume.pdf"
                             download
                             className="flex items-center justify-center gap-2 mt-3 px-4 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 text-sm font-semibold rounded-xl"
                         >
