@@ -106,12 +106,12 @@ export default function Certifications() {
                             {/* Icon */}
                             <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cert.color} p-0.5 mb-4`}>
                                 <div className="w-full h-full rounded-xl bg-slate-900 flex items-center justify-center">
-                                    <Award className="w-5 h-5 text-white" />
+                                    <Award className="w-5 h-5 text-slate-50" />
                                 </div>
                             </div>
 
                             <div className="flex-1">
-                                <span className={`text-xs  px-2 py-0.5 rounded-full bg-gradient-to-r ${cert.color} text-white`}>
+                                <span className={`text-xs  px-2 py-0.5 rounded-full bg-gradient-to-r ${cert.color} text-slate-50`}>
                                     {cert.domain}
                                 </span>
                                 <h3 className=" font-semibold text-slate-100 mt-3 mb-1">

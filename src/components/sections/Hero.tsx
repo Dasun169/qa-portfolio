@@ -74,7 +74,7 @@ export default function Hero() {
                             whileHover={{ scale: 1.03, boxShadow: "0 0 30px rgba(59,130,246,0.4)" }}
                             whileTap={{ scale: 0.97 }}
                             onClick={() => scrollTo("projects")}
-                            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-white font-semibold rounded-xl"
+                            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 font-semibold rounded-xl"
                         >
                             View Projects <ChevronRight className="w-4 h-4" />
                         </motion.button>

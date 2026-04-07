@@ -144,7 +144,7 @@ export default function Contact() {
                                     disabled={status === "sending"}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity disabled:opacity-60"
+                                    className="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 font-semibold rounded-xl hover:opacity-90 transition-opacity disabled:opacity-60"
                                 >
                                     <Send className="w-4 h-4" />
                                     {status === "sending" ? "Sending..." : "Send Message"}

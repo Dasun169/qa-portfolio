@@ -96,7 +96,7 @@ export default function Navbar() {
                         whileTap={{ scale: 0.97 }}
                         href="/cv.pdf"
                         download
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-500 to-accent-500 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-opacity"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 text-sm font-semibold rounded-xl hover:opacity-90 transition-opacity"
                     >
                         <Download className="w-3.5 h-3.5" />
                         Download CV
@@ -142,7 +142,7 @@ export default function Navbar() {
                         <a
                             href="/cv.pdf"
                             download
-                            className="flex items-center justify-center gap-2 mt-3 px-4 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-white text-sm font-semibold rounded-xl"
+                            className="flex items-center justify-center gap-2 mt-3 px-4 py-3 bg-gradient-to-r from-brand-500 to-accent-500 text-slate-50 text-sm font-semibold rounded-xl"
                         >
                             <Download className="w-4 h-4" /> Download CV
                         </a>

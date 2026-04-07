@@ -44,15 +44,32 @@
 }
 
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.6);
-  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.15);
   --gradient-x: 50%;
   --gradient-y: 50%;
+  
+  /* Invert common text colors for Light Mode so text is automatically readable against light backgrounds! */
+  --color-slate-100: #020617; /* Matches slate-950 for massive contrast */
+  --color-slate-200: #0f172a; /* Matches slate-900 */
+  --color-slate-300: #1e293b; /* Matches slate-800 */
+  --color-slate-400: #334155; /* Matches slate-700 */
+  --color-slate-500: #475569; /* Matches slate-600 */
+  /* Redefine white to black so border-white/10 and bg-white/5 correctly apply dark opacities in light mode */
+  --color-white: #0f172a;
 }
 
 .dark {
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Restore normal dark mode values */
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-white: #ffffff;
 }
 
 body {
