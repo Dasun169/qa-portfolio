@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { Shield, Zap, Code2, GitBranch } from "lucide-react";
 
 const STATS = [
-    { label: "Test Cases Created", value: "400+", icon: Shield },
+    { label: "Test Cases Created", value: "600+", icon: Shield },
     { label: "Automation Frameworks", value: "4+", icon: Zap },
-    { label: "Manual Effort Reduced", value: "~40%", icon: Code2 },
+    { label: "Manual Effort Reduced", value: "~30%", icon: Code2 },
     { label: "Months Experience", value: "8+", icon: GitBranch },
 ];
 
@@ -52,6 +52,7 @@ export default function About() {
                                 <span className="text-cyan-400 font-semibold">Selenium WebDriver</span>.
                                 I have experience in{" "}
                                 <span className="text-accent-400 font-semibold">API testing</span>,{" "}
+                                <span className="text-accent-400 font-semibold">Performance testing</span>,{" "}
                                 <span className="text-accent-400 font-semibold">CI/CD integration</span>, and{" "}
                                 <span className="text-accent-400 font-semibold">Agile environments</span>.
                             </p>
@@ -61,7 +62,7 @@ export default function About() {
                             </p>
 
                             <div className="flex flex-wrap gap-2 pt-2">
-                                {["Playwright", "Selenium", "Postman", "Jenkins", "Docker"].map((tag) => (
+                                {["Playwright", "Selenium", "Mabl", "Postman", "Newman", "Rest Assured", "JMeter", "K6", "Jenkins", "Docker"].map((tag) => (
                                     <span
                                         key={tag}
                                         className="px-3 py-1 glass rounded-full text-sm  text-brand-400 border border-brand-500/20"
