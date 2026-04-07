@@ -136,7 +136,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     placeholder="Your Message"
                                     required
-                                    rows={11}
+                                    rows={7}
                                     className="w-full px-4 py-3 glass rounded-xl border border-white/10 focus:border-brand-500/50 outline-none text-slate-100 placeholder-slate-600 text-sm transition-colors bg-transparent resize-none"
                                 />
                                 <motion.button
