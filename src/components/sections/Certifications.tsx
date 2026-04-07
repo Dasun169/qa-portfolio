@@ -45,10 +45,10 @@ export default function Certifications() {
         <section id="certifications" className="relative py-24 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                    <span className=" text-brand-400 text-sm tracking-widest uppercase">
                         Credentials
                     </span>
-                    <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                    <h2 className=" font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                         Certifications
                     </h2>
                 </div>
@@ -71,10 +71,10 @@ export default function Certifications() {
                             </div>
 
                             <div className="flex-1">
-                                <span className={`text-xs font-mono px-2 py-0.5 rounded-full bg-gradient-to-r ${cert.color} text-white`}>
+                                <span className={`text-xs  px-2 py-0.5 rounded-full bg-gradient-to-r ${cert.color} text-white`}>
                                     {cert.domain}
                                 </span>
-                                <h3 className="font-display font-semibold text-slate-100 mt-3 mb-1">
+                                <h3 className=" font-semibold text-slate-100 mt-3 mb-1">
                                     {cert.title}
                                 </h3>
                                 <p className="text-slate-500 text-sm">{cert.issuer}</p>

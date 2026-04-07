@@ -48,10 +48,10 @@ export default function Contact() {
         <section id="contact" className="relative py-24 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                    <span className=" text-brand-400 text-sm tracking-widest uppercase">
                         Contact
                     </span>
-                    <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                    <h2 className=" font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                         Get In Touch
                     </h2>
                 </div>
@@ -82,7 +82,7 @@ export default function Contact() {
                                         <Icon className="w-4 h-4 text-brand-400" />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-500 font-mono">{label}</p>
+                                        <p className="text-xs text-slate-500 ">{label}</p>
                                         <p className="text-slate-300 text-sm group-hover:text-brand-400 transition-colors">{value}</p>
                                     </div>
                                 </motion.a>
@@ -103,7 +103,7 @@ export default function Contact() {
                                 className="h-full flex flex-col items-center justify-center glass rounded-2xl border border-green-500/30 p-12 text-center"
                             >
                                 <CheckCircle className="w-16 h-16 text-green-400 mb-4" />
-                                <h3 className="font-display font-bold text-xl text-slate-100 mb-2">Message Sent!</h3>
+                                <h3 className=" font-bold text-xl text-slate-100 mb-2">Message Sent!</h3>
                                 <p className="text-slate-400">I&apos;ll get back to you soon.</p>
                                 <button
                                     onClick={() => setStatus("idle")}

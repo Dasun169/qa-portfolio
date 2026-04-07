@@ -56,11 +56,11 @@ export default function Navbar() {
                 {/* Logo */}
                 <motion.span
                     whileHover={{ scale: 1.02 }}
-                    className="font-display font-bold text-xl cursor-pointer"
+                    className=" font-bold text-xl cursor-pointer"
                     onClick={() => scrollTo("#home")}
                 >
                     <span className="gradient-text text-3xl">Dasun</span>
-                    <span className="text-slate-300 dark:text-slate-300 text-sm font-mono ml-1 text-3xl">
+                    <span className="text-slate-300 dark:text-slate-300 text-sm text-xl  ml-1">
                         .QA
                     </span>
                 </motion.span>

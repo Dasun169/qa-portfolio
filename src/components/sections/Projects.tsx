@@ -58,10 +58,10 @@ export default function Projects() {
         <section id="projects" className="relative py-24 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                    <span className=" text-brand-400 text-sm tracking-widest uppercase">
                         Projects
                     </span>
-                    <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                    <h2 className=" font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                         Featured Work
                     </h2>
                     <p className="text-slate-500 mt-2">7+ projects across QA automation and testing</p>
@@ -83,8 +83,8 @@ export default function Projects() {
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <span className="font-mono text-xs text-slate-500">{project.year}</span>
-                    <h3 className="font-display font-bold text-lg text-slate-100 mt-0.5 group-hover:gradient-text transition-all">
+                    <span className=" text-xs text-slate-500">{project.year}</span>
+                    <h3 className=" font-bold text-lg text-slate-100 mt-0.5 group-hover:gradient-text transition-all">
                       {project.title}
                     </h3>
                     <p className="text-sm text-slate-400">{project.subtitle}</p>
@@ -119,7 +119,7 @@ export default function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-2 py-0.5 text-xs font-mono bg-white/5 border border-white/10 rounded text-slate-300"
+                      className="px-2 py-0.5 text-xs  bg-white/5 border border-white/10 rounded text-slate-300"
                     >
                       {t}
                     </span>

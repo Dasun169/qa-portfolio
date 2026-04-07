@@ -22,9 +22,9 @@ export default function Footer() {
                 <div className="grid sm:grid-cols-3 gap-8 mb-8">
                     {/* Brand */}
                     <div>
-                        <p className="font-display font-bold text-xl mb-2">
+                        <p className=" font-bold text-xl mb-2">
                             <span className="gradient-text">Dasun</span>
-                            <span className="text-slate-500 font-mono text-sm">.QA</span>
+                            <span className="text-slate-500  text-sm">.QA</span>
                         </p>
                         <p className="text-slate-500 text-sm">
                             Software Quality Assurance Engineer building reliable systems through smart automation.
@@ -33,7 +33,7 @@ export default function Footer() {
 
                     {/* Quick nav */}
                     <div>
-                        <p className="font-semibold text-slate-300 mb-3 font-display">Navigation</p>
+                        <p className="font-semibold text-slate-300 mb-3 ">Navigation</p>
                         <div className="flex flex-wrap gap-x-4 gap-y-2">
                             {LINKS.map((link) => (
                                 <button
@@ -49,7 +49,7 @@ export default function Footer() {
 
                     {/* Socials */}
                     <div>
-                        <p className="font-semibold text-slate-300 mb-3 font-display">Connect</p>
+                        <p className="font-semibold text-slate-300 mb-3 ">Connect</p>
                         <div className="flex gap-3">
                             {SOCIALS.map(({ icon: Icon, href, label }) => (
                                 <motion.a
@@ -69,7 +69,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 pt-6 text-center">
-                    <p className="text-slate-600 text-sm font-mono">
+                    <p className="text-slate-600 text-sm ">
                         © {new Date().getFullYear()} Dasun Navindu Dewnith. Built with Next.js & Tailwind CSS.
                     </p>
                 </div>

@@ -47,10 +47,10 @@ export default function Skills() {
         <section id="skills" className="relative py-24 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                    <span className=" text-brand-400 text-sm tracking-widest uppercase">
                         Skills
                     </span>
-                    <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                    <h2 className="font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                         Technical Arsenal
                     </h2>
                 </div>
@@ -68,7 +68,7 @@ export default function Skills() {
                             {/* Category header */}
                             <div className="flex items-center gap-3 mb-4">
                                 <div className={`w-2 h-8 rounded-full bg-gradient-to-b ${group.color}`} />
-                                <h3 className="font-display font-semibold text-slate-100">
+                                <h3 className="font-semibold text-slate-100">
                                     {group.category}
                                 </h3>
                             </div>

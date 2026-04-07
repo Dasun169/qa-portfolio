@@ -24,10 +24,10 @@ export default function About() {
                 >
                     {/* Section header */}
                     <div className="text-center mb-16">
-                        <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                        <span className=" text-brand-400 text-sm tracking-widest uppercase">
                             About Me
                         </span>
-                        <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                        <h2 className=" font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                             Who Am I?
                         </h2>
                     </div>
@@ -64,7 +64,7 @@ export default function About() {
                                 {["Playwright", "Selenium", "Postman", "Jenkins", "Docker"].map((tag) => (
                                     <span
                                         key={tag}
-                                        className="px-3 py-1 glass rounded-full text-sm font-mono text-brand-400 border border-brand-500/20"
+                                        className="px-3 py-1 glass rounded-full text-sm  text-brand-400 border border-brand-500/20"
                                     >
                                         {tag}
                                     </span>
@@ -89,7 +89,7 @@ export default function About() {
                                     className="glass rounded-2xl p-5 border border-white/10 hover:border-brand-500/30 transition-all duration-300"
                                 >
                                     <Icon className="w-5 h-5 text-brand-400 mb-3" />
-                                    <p className="font-display font-bold text-3xl gradient-text">{value}</p>
+                                    <p className=" font-bold text-3xl gradient-text">{value}</p>
                                     <p className="text-slate-500 text-sm mt-1">{label}</p>
                                 </motion.div>
                             ))}

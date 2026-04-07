@@ -57,10 +57,10 @@ export default function Experience() {
         <section id="experience" className="relative py-24 px-4">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="font-mono text-brand-400 text-sm tracking-widest uppercase">
+                    <span className=" text-brand-400 text-sm tracking-widest uppercase">
                         Journey
                     </span>
-                    <h2 className="font-display font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
+                    <h2 className=" font-bold text-3xl sm:text-4xl mt-2 text-slate-100">
                         Experience & Education
                     </h2>
                 </div>
@@ -89,11 +89,11 @@ export default function Experience() {
                                     <div className={`glass rounded-2xl p-6 border ${item.border} hover:shadow-lg transition-all duration-300`}>
                                         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                                             <div>
-                                                <h3 className="font-display font-bold text-slate-100">{item.title}</h3>
+                                                <h3 className=" font-bold text-slate-100">{item.title}</h3>
                                                 <p className={`font-semibold text-sm ${item.color}`}>{item.org}</p>
                                             </div>
                                             <div className="flex flex-col items-start sm:items-end gap-1 shrink-0">
-                                                <span className="flex items-center gap-1 text-xs text-slate-500 font-mono">
+                                                <span className="flex items-center gap-1 text-xs text-slate-500 ">
                                                     <Calendar className="w-3 h-3" /> {item.period}
                                                 </span>
                                                 <span className="flex items-center gap-1 text-xs text-slate-500">
