@@ -6,37 +6,42 @@ const SKILL_GROUPS = [
     {
         category: "Testing",
         color: "from-blue-500 to-cyan-500",
-        skills: ["Manual Testing", "Regression Testing", "Smoke & Sanity Testing", "Test Case Design", "Defect Management"],
+        skills: ["Exploratory Testing", "UAT", "Regression Testing", "Smoke & Sanity Testing", "Test Planning & Strategy", "Test Case Design", "Defect Management"],
     },
     {
         category: "Automation",
         color: "from-purple-500 to-pink-500",
-        skills: ["Playwright", "Selenium WebDriver"],
+        skills: ["Playwright", "Selenium WebDriver", "Mabl", "TestNG/JUnit", "POM", "Data-Driven Testing", "Cross-browser & Cross-device", "Parallel Execution"],
     },
     {
         category: "API Testing",
         color: "from-cyan-500 to-teal-500",
-        skills: ["Postman", "Newman", "REST Assured"],
+        skills: ["Postman", "Newman", "REST Assured", "Swagger/OpenAPI", "Pre-request & Post-response", "Auth Testing (JWT, OAuth)"],
     },
     {
         category: "Performance",
         color: "from-orange-500 to-red-500",
-        skills: ["JMeter", "K6"],
+        skills: ["JMeter", "K6", "Load Testing", "Stress Testing", "Spike Testing", "Endurance Testing", "Performance Monitoring", "Performance Analysis"],
     },
     {
         category: "Tools & DevOps",
         color: "from-green-500 to-emerald-500",
-        skills: ["Git", "GitHub", "GitLab", "Bitbucket", "Jenkins", "Docker", "AWS", "Azure", "GCP"],
+        skills: ["Git", "GitHub", "GitLab", "Bitbucket", "Jenkins", "CI/CD Pipelines", "GitHub Actions", "Docker", "AWS", "Azure", "GCP", "Allure Reports"],
     },
     {
         category: "Programming",
         color: "from-brand-500 to-accent-500",
-        skills: ["Java", "JavaScript", "TypeScript", "Python", "Groovy"],
+        skills: ["Java", "JavaScript", "TypeScript", "Python", "C#", "Groovy", "OOP Concepts", "Design Patterns", "Data Structures & Algorithms"],
     },
     {
         category: "Database",
         color: "from-yellow-500 to-orange-500",
-        skills: ["MySQL", "Oracle", "MongoDB"],
+        skills: ["MySQL", "SQL Server", "Oracle", "MongoDB", "PL/SQL", "Database Testing", "SQL Queries", "Response validation"],
+    },
+    {
+        category: "QA Processes & Methodologies",
+        color: "from-pink-500 to-purple-500",
+        skills: ["Agile", "Scrum", "SDLC & STLC", "Bug Life Cycle", "Test Strategy & Planning", "JIRA", "Shift-Left Testing", "Shift-Right Testing"],
     },
 ];
 
