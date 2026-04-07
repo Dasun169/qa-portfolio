@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Briefcase, GraduationCap, School, MapPin, Calendar } from "lucide-react";
+import { Briefcase, GraduationCap, School, MapPin, Calendar, Users } from "lucide-react";
 
 const TIMELINE = [
     {
@@ -12,13 +12,13 @@ const TIMELINE = [
         bg: "bg-brand-500/10",
         title: "QA Automation Intern",
         org: "iLabs (Pvt) Ltd",
-        period: "Aug 2025 – Mar 2026",
-        location: "Sri Lanka",
+        period: "Aug 2025 – Present",
+        location: "Koswatte, Sri Lanka",
         points: [
-            "Worked on the Cloud of Goods project",
+            "Worked on the Cloud of Goods rental website and was responsible for maintaining its quality",
             "Automated E2E tests using Playwright and reduced manual testing effort by 30–40%",
             "Created and managed 400+ test cases across functional and regression suites",
-            "Integrated automation pipelines with CI/CD using Jenkins and GitHub Actions",
+            "Integrated automation pipelines into CI/CD workflows using Jenkins",
         ],
     },
     {
@@ -27,26 +27,44 @@ const TIMELINE = [
         color: "text-accent-400",
         border: "border-accent-500/40",
         bg: "bg-accent-500/10",
-        title: "BSc (Hons) Computer Science",
+        title: "BSc (Hons) in Computer Science",
         org: "University of Kelaniya",
         period: "2022 – 2026",
         location: "Kelaniya, Sri Lanka",
         points: [
-            "Specializing in Software Engineering and Quality Assurance",
-            "Active member of tech communities and hackathons",
+            "Specializing in Computer Science and have foundamental about software engineering, quality assurance, data science, AI and etc",
+            "Active member of tech communities",
+        ],
+    },
+    {
+        type: "volunteer",
+        icon: Users, // from lucide-react: import { Users } from "lucide-react"
+        color: "text-cyan-400",
+        border: "border-cyan-500/40",
+        bg: "bg-cyan-500/10",
+        title: "President",
+        org: "Statistic & Computer Science Students’ Association",
+        period: "Aug 2024 – Jun 2025",
+        location: "University of Kelaniya, Sri Lanka",
+        points: [
+            "Organized academic programs such as PyQuest (Python workflow) and StatBee (Statistic Quiz Competition)",
+            "Coordinated fun events including Annual Field Visit, Aurudu Uthsawaya, Movie Festival, and Food Festival",
         ],
     },
     {
         type: "school",
         icon: School,
-        color: "text-cyan-400",
-        border: "border-cyan-500/40",
-        bg: "bg-cyan-500/10",
+        color: "text-pink-400",
+        border: "border-pink-500/40",
+        bg: "bg-pink-500/10",
         title: "Secondary Education",
         org: "Bandaranayake College Gampaha",
         period: "Until 2021",
         location: "Gampaha, Sri Lanka",
-        points: ["Advanced Level — Science Stream"],
+        points: [
+            "G.C.E. Advanced Level — Mathematics (B), Chemistry (B), Physics (C)",
+            "G.C.E. Ordinary Level — 7A, 2B"
+        ],
     },
 ];
 
