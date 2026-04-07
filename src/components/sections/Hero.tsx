@@ -31,7 +31,7 @@ export default function Hero() {
                     className="space-y-6"
                 >
                     <motion.div variants={item}>
-                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-mono">
+                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-brand-500/30 text-brand-400 text-sm">
                             <span className="w-3 h-3 rounded-full bg-brand-400 animate-pulse" />
                             <p className="text-lg">Available for opportunities</p>
                         </span>
@@ -39,7 +39,7 @@ export default function Hero() {
 
                     <motion.h1
                         variants={item}
-                        className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight"
+                        className="font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight"
                     >
                         <span className="text-slate-900 dark:text-slate-100">
                             Dasun Navindu
@@ -49,10 +49,10 @@ export default function Hero() {
                     </motion.h1>
 
                     <motion.div variants={item} className="space-y-1">
-                        <p className="text-lg sm:text-xl font-semibold text-slate-300 font-display">
+                        <p className="text-lg sm:text-xl font-semibold text-slate-300">
                             Software Quality Assurance Engineer
                         </p>
-                        <p className="text-base text-accent-500 font-mono text-xl">
+                        <p className="text-lg sm:text-xl text-accent-500">
                             QA Automation Enthusiast
                         </p>
                     </motion.div>
@@ -99,8 +99,8 @@ export default function Hero() {
 
                     <motion.div variants={item} className="flex items-center gap-4 pt-2">
                         {[
-                            { icon: Github, href: "https://github.com/dasunnavindu", label: "GitHub" },
-                            { icon: Linkedin, href: "https://linkedin.com/in/dasunnavindu", label: "LinkedIn" },
+                            { icon: Github, href: "https://github.com/Dasun169", label: "GitHub" },
+                            { icon: Linkedin, href: "https://www.linkedin.com/in/dasun-navindu-987857292", label: "LinkedIn" },
                             { icon: Mail, href: "mailto:dasunnavindu2001@gmail.com", label: "Email" },
                         ].map(({ icon: Icon, href, label }) => (
                             <motion.a
@@ -149,16 +149,16 @@ export default function Hero() {
                             transition={{ duration: 5, repeat: Infinity }}
                             className="absolute -top-4 -right-4 glass rounded-xl px-3 py-2 border border-white/10"
                         >
-                            <p className="text-xs text-slate-200 font-mono">Status</p>
-                            <p className="text-xs font-semibold text-brand-400">QA Engineer</p>
+                            <p className="text-sm text-slate-200">Status</p>
+                            <p className="text-sm font-semibold text-brand-400">QA Engineer</p>
                         </motion.div>
                         <motion.div
                             animate={{ rotate: [0, -5, 5, 0] }}
                             transition={{ duration: 6, repeat: Infinity, delay: 1 }}
                             className="absolute -bottom-4 -left-4 glass rounded-xl px-3 py-2 border border-white/10"
                         >
-                            <p className="text-xs text-slate-200 font-mono">Experience in</p>
-                            <p className="text-xs font-semibold text-accent-400">Automation</p>
+                            <p className="text-sm text-slate-200">Experience in</p>
+                            <p className="text-sm font-semibold text-accent-400">Automation</p>
                         </motion.div>
                     </div>
                 </motion.div>
