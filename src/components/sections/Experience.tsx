@@ -5,6 +5,23 @@ import { Briefcase, GraduationCap, School, MapPin, Calendar, Users } from "lucid
 
 const TIMELINE = [
     {
+        "type": "school",
+        "icon": "School",
+        "color": "text-pink-400",
+        "border": "border-pink-500/40",
+        "bg": "bg-pink-500/10",
+        "title": "Associate QA Automation Engineer",
+        "org": "Mitra Innovation (Pvt) Ltd",
+        "period": "May 2026 - Present",
+        "location": "Moratuwa, Sri Lanka",
+        "logo": "https://media.licdn.com/dms/image/v2/D560BAQG9dMLZzK4vUA/company-logo_200_200/company-logo_200_200/0/1729666725636/mitra_innovation_logo?e=1783555200&v=beta&t=tUN_EqXBC88EpK8H3a-q0cSzlxGdblue1-VNTDp_AWg",
+        "points": [
+            "Led end-to-end regression testing for a fintech banking web application using a Selenium-based automation framework, ensuring system stability across releases",
+            "Managed the complete bug lifecycle during regression cycles — identified, documented, prioritized, and assigned critical issues to respective developers for timely resolution",
+            "Designed and executed automated test scripts for the mobile application using Katalon Studio's low-code framework, expanding test coverage to the mobile banking platform"
+        ]
+    },
+    {
         type: "work",
         icon: Briefcase,
         color: "text-brand-400",
@@ -12,8 +29,9 @@ const TIMELINE = [
         bg: "bg-brand-500/10",
         title: "QA Automation Intern",
         org: "iLabs (Pvt) Ltd",
-        period: "Aug 2025 – Present",
+        period: "Aug 2025 – May 2026",
         location: "Koswatte, Sri Lanka",
+        logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHJiJ7YlJFsYg/company-logo_200_200/company-logo_200_200/0/1630639335270/incubate_labs_logo?e=1783555200&v=beta&t=HEsL4FRwd13QiKweXlURMgwech4WusoNqlcLWy1aZok",
         points: [
             "Worked on the Cloud of Goods rental website and was responsible for maintaining its quality",
             "Automated E2E tests using Playwright and reduced manual testing effort by 30–40%",
@@ -31,6 +49,7 @@ const TIMELINE = [
         org: "University of Kelaniya",
         period: "2022 – 2026",
         location: "Kelaniya, Sri Lanka",
+        logo: "https://media.licdn.com/dms/image/v2/C560BAQGTFCXTiB6wqA/company-logo_200_200/company-logo_200_200/0/1631312041455?e=1783555200&v=beta&t=uiDf_Ob9lUJc1dXHevH3TQYaL_bmu8QUK1_aeFRwgFw",
         points: [
             "Specializing in Computer Science and have foundamental about software engineering, quality assurance, data science, AI and etc",
             "Active member of tech communities",
@@ -46,6 +65,7 @@ const TIMELINE = [
         org: "Statistic & Computer Science Students’ Association",
         period: "Aug 2024 – Jun 2025",
         location: "University of Kelaniya, Sri Lanka",
+        logo: "https://media.licdn.com/dms/image/v2/D4E0BAQH6t6nkcuCtNw/img-crop_100/B4EZbx4WBTGQAU-/0/1747814803765?e=1783555200&v=beta&t=ePOKoRF3tIPfclCcqe4D15BhGb4hevqmZB78_UgN3Dg",
         points: [
             "Organized academic programs such as PyQuest (Python workflow) and StatBee (Statistic Quiz Competition)",
             "Coordinated fun events including Annual Field Visit, Aurudu Uthsawaya, Movie Festival, and Food Festival",
@@ -61,6 +81,7 @@ const TIMELINE = [
         org: "Bandaranayake College Gampaha",
         period: "Until 2021",
         location: "Gampaha, Sri Lanka",
+        logo: "https://media.licdn.com/dms/image/v2/C4E0BAQE8vLcYFZIDHQ/company-logo_200_200/company-logo_200_200/0/1630593421368?e=1783555200&v=beta&t=gQHCvf9OeI0OQdiL4Rvz1m91G0wDHYvZg0iWN3LvMVE",
         points: [
             "G.C.E. Advanced Level — Mathematics (B), Chemistry (B), Physics (C)",
             "G.C.E. Ordinary Level — 7A, 2B"
@@ -98,9 +119,17 @@ export default function Experience() {
                                     transition={{ duration: 0.6, delay: i * 0.2 }}
                                     className="relative pl-16 sm:pl-20"
                                 >
-                                    {/* Icon */}
-                                    <div className={`absolute left-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl glass border ${item.border} ${item.bg}`}>
-                                        <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${item.color}`} />
+                                    {/* Icon / Logo */}
+                                    <div className={`absolute left-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl glass border ${item.border} ${item.bg} overflow-hidden`}>
+                                        {item.logo ? (
+                                            <img
+                                                src={item.logo}
+                                                alt={item.org}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        ) : (
+                                            <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${item.color}`} />
+                                        )}
                                     </div>
 
                                     {/* Card */}
