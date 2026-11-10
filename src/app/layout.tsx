@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "../components/providers/ThemeProvider";
-import { TitleAnimator } from "@/components/ui/TitleAnimator";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.dasunnavindu.dev'),
+  metadataBase: new URL("https://www.dasunnavindu.dev"),
   title: {
-    default: "Dasun Navindu | QA Engineer & Software Tester",
+    default: "Dasun Navindu Dewnith | QA Engineer",
     template: "%s | Dasun Navindu",
   },
-  description: "Dasun Navindu is a Software Quality Assurance Engineer specializing in test automation, manual testing, and web development. View portfolio, skills, and experience.",
-  keywords: ["Dasun Navindu", "QA Engineer", "Software Tester", "Test Automation", "Quality Assurance", "Sri Lanka QA", "Portfolio"],
+  description:
+    "Dasun Navindu is a Software Quality Assurance Engineer specializing in test automation, manual testing, and web development. View portfolio, skills, and experience.",
+  keywords: [
+    "Dasun Navindu",
+    "QA Engineer",
+    "Software Tester",
+    "Test Automation",
+    "Quality Assurance",
+    "Sri Lanka QA",
+    "Portfolio",
+  ],
   authors: [{ name: "Dasun Navindu", url: "https://www.dasunnavindu.dev" }],
   creator: "Dasun Navindu",
   publisher: "Dasun Navindu",
@@ -27,8 +35,9 @@ export const metadata: Metadata = {
     canonical: "https://www.dasunnavindu.dev",
   },
   openGraph: {
-    title: "Dasun Navindu | QA Engineer Portfolio",
-    description: "Explore the professional portfolio of Dasun Navindu - QA Engineer specializing in test automation and software quality.",
+    title: "Dasun Navindu Dewnith | QA Engineer Portfolio",
+    description:
+      "Explore the professional portfolio of Dasun Navindu - QA Engineer specializing in test automation and software quality.",
     url: "https://www.dasunnavindu.dev",
     siteName: "Dasun Navindu Portfolio",
     type: "website",
@@ -44,8 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dasun Navindu | QA Engineer Portfolio",
-    description: "Explore the professional portfolio of Dasun Navindu - QA Engineer specializing in test automation.",
+    title: "Dasun Navindu Dewnith | QA Engineer Portfolio",
+    description:
+      "Explore the professional portfolio of Dasun Navindu - QA Engineer specializing in test automation.",
     images: ["https://www.dasunnavindu.dev/og-image.png"],
     creator: "@dasunnavindu",
   },
@@ -69,10 +79,7 @@ export default function RootLayout({
         {/* <meta name="google-site-verification" content="your-code-here" /> */}
       </head>
       <body>
-        <ThemeProvider>
-          <TitleAnimator />
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
